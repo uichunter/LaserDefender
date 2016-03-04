@@ -112,6 +112,8 @@ MonoBehaviour:
   missleType: {fileID: 124054, guid: 1271997160d39c146aaab2966d0b5599, type: 2}
   shotsPerSec: 0.3
   EnemyScore: 150
+  enemyFireSound: {fileID: 8300000, guid: 103658379f8efa1448304e5b74b0a7c8, type: 3}
+  enemyCrashSound: {fileID: 8300000, guid: d412563ef81ac2e4e94dce500619c071, type: 3}
 --- !u!212 &21266254
 SpriteRenderer:
   m_ObjectHideFlags: 1

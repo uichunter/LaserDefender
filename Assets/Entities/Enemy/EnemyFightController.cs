@@ -7,6 +7,8 @@ public class EnemyFightController : MonoBehaviour {
 	public GameObject missleType;
 	public float shotsPerSec = 0.5f;
 	public int EnemyScore;
+	public AudioClip enemyFireSound;
+	public AudioClip enemyCrashSound;
 
 	private int enemyHp;
 	private ScoreKeeper scorekeeper;
@@ -38,6 +40,8 @@ public class EnemyFightController : MonoBehaviour {
 		if (enemyHp <= 0) {
 			scorekeeper.Score(EnemyScore);
 			Destroy(gameObject);
+			AudioSource.PlayClipAtPoint(enemyCrashSound,transform.position);
+			//this.GetComponent<AudioSource>().;
 		}
 	}
 
@@ -55,6 +59,7 @@ public class EnemyFightController : MonoBehaviour {
 		Vector3 spriteBorder = new Vector3(0f,GetComponent<SpriteRenderer>().sprite.bounds.size.y,0f);
 		GameObject biu = Instantiate(missleType,transform.position - spriteBorder,Quaternion.identity) as GameObject;
 		biu.GetComponent<Rigidbody2D>().velocity = new Vector2(0f,-missleSpeed);
+		AudioSource.PlayClipAtPoint(enemyFireSound,transform.position);
 	}
 
 }

@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: 503c54e7814f4ca4daf2fa4c48cbb82c
-timeCreated: 1456799914
+timeCreated: 1457104188
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - missleType: {instanceID: 0}
+  - enemyFireSound: {instanceID: 0}
+  - enemyCrashSound: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

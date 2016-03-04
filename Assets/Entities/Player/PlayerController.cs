@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour {
 //	public GameObject fireEffect;
 	public float beamSpeed = 5f;
 	public float fireRate = 0.2f;
+	public AudioClip playerFireSound;
 
 	private int playerHp;
     Vector3 spriteBorder;
@@ -94,6 +95,7 @@ public class PlayerController : MonoBehaviour {
 		FirePo +=transform.position;
 		GameObject beam = Instantiate (firePrefab, FirePo, Quaternion.identity) as GameObject;
 		beam.GetComponent<Rigidbody2D>().velocity = new Vector2(0f,beamSpeed);
+		AudioSource.PlayClipAtPoint(playerFireSound,FirePo);
 	}
 
 	void OnTriggerEnter2D (Collider2D collider)

@@ -12,6 +12,7 @@ GameObject:
   - 50: {fileID: 5065440}
   - 114: {fileID: 11421496}
   - 60: {fileID: 6009572}
+  - 82: {fileID: 8287182}
   m_Layer: 8
   m_Name: playerShip1_red
   m_TagString: Untagged
@@ -80,6 +81,80 @@ PolygonCollider2D:
       - {x: 0.54696655, y: -0.2919612}
       - {x: 0.6066667, y: -0.35333335}
       - {x: 0.6193228, y: -0.33548033}
+--- !u!82 &8287182
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152248}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 26cf13ec0a5b76d4499878e05261ba28, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &11421496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -100,6 +175,7 @@ MonoBehaviour:
   firePrefab: {fileID: 126884, guid: 95ed85307ecc4954ea732fa5ee441cec, type: 2}
   beamSpeed: 12
   fireRate: 0.2
+  playerFireSound: {fileID: 8300000, guid: 26cf13ec0a5b76d4499878e05261ba28, type: 3}
 --- !u!212 &21257092
 SpriteRenderer:
   m_ObjectHideFlags: 1
