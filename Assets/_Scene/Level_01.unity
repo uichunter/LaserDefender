@@ -390,6 +390,10 @@ Prefab:
       propertyPath: m_Size.x
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 199612, guid: 3f2d097b70bec4e4f83985a82ed2a321, type: 2}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f2d097b70bec4e4f83985a82ed2a321, type: 2}
   m_IsPrefabParent: 0
@@ -563,6 +567,10 @@ Prefab:
       propertyPath: m_Name
       value: Shredder Top
       objectReference: {fileID: 0}
+    - target: {fileID: 199612, guid: 3f2d097b70bec4e4f83985a82ed2a321, type: 2}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f2d097b70bec4e4f83985a82ed2a321, type: 2}
   m_IsPrefabParent: 0
@@ -615,6 +623,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6189658, guid: 3f2d097b70bec4e4f83985a82ed2a321, type: 2}
       propertyPath: m_Size.y
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 199612, guid: 3f2d097b70bec4e4f83985a82ed2a321, type: 2}
+      propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -761,6 +773,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6189658, guid: 3f2d097b70bec4e4f83985a82ed2a321, type: 2}
       propertyPath: m_Size.y
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 199612, guid: 3f2d097b70bec4e4f83985a82ed2a321, type: 2}
+      propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []

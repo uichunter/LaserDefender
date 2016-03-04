@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 447624}
   - 61: {fileID: 6189658}
   - 114: {fileID: 11447244}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Shredder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
