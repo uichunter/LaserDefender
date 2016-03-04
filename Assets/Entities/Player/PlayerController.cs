@@ -18,20 +18,22 @@ public class PlayerController : MonoBehaviour {
 
 	public int playerHp;
 	private LvManager lvManager;
+	private HpDisplay hpDisplay;
  
     Vector3 spriteBorder;
 
 	// Use this for initialization
 	void Start () {
 	//TODO if (hasStarted){Screen.showCursor = false;}
-		setLvManager();
+		setToolClass();
 		setPlayerHp();
 		SetMoveSpeed();
 	}
 
 	//This is important! I just forgot to add this method. And the lvManager is always null!!
-	void setLvManager ()
+	void setToolClass ()
 	{
+		hpDisplay = GameObject.FindObjectOfType<HpDisplay>();
 		lvManager = GameObject.FindObjectOfType<LvManager>();
 	}
 
@@ -46,6 +48,7 @@ public class PlayerController : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
+		hpDisplay.setHpText(playerHp);
 		Move();
 		Fire();
 	}

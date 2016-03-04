@@ -63,8 +63,9 @@ GameObject:
   - 224: {fileID: 22417092}
   - 222: {fileID: 22247188}
   - 114: {fileID: 11473756}
+  - 114: {fileID: 11451972}
   m_Layer: 5
-  m_Name: Current Hp
+  m_Name: CurrentHp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,6 +115,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'HP : '
+--- !u!114 &11451972
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22f77a2947287654cb40a6e9660c0f86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11455192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -267,7 +279,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 65, y: 230}
+  m_AnchoredPosition: {x: 41, y: 230}
   m_SizeDelta: {x: 66, y: 29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22458182
