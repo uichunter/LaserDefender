@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour {
 	public float fireRate = 0.2f;
 	public AudioClip playerFireSound;
 
-	private int playerHp;
+	public int playerHp;
 	private LvManager lvManager;
  
     Vector3 spriteBorder;

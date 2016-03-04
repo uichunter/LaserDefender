@@ -13,10 +13,13 @@ public class EnemyGenerator : MonoBehaviour {
 //	private float tempHeightMax;
 //	private float tempHeightMin;
 	private bool isMovingRight=false;
+	private LvManager lvManager;
+	static int wave=0;
 //	private bool isFirstTime=true;
 
 	// Use this for initialization
 	void Start () {
+		lvManager = GameObject.FindObjectOfType<LvManager>();
 		SpwanUntilFull();
 	}
 
@@ -92,7 +95,10 @@ public class EnemyGenerator : MonoBehaviour {
 	{
 		if (AllEnemyDead ()) {
 			SpwanUntilFull();
-			//Destroy(this);
+			wave++;
+			if (wave>=1){
+				lvManager.LvLoader("Win");
+			}
 		}
 	}
 
