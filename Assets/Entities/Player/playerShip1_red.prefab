@@ -176,6 +176,7 @@ MonoBehaviour:
   beamSpeed: 12
   fireRate: 0.2
   playerFireSound: {fileID: 8300000, guid: 26cf13ec0a5b76d4499878e05261ba28, type: 3}
+  lvManager: {fileID: 11413118, guid: f53bc482b13511e4983a81a37fec1554, type: 2}
 --- !u!212 &21257092
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -200,7 +201,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 286051947
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5b8a4429c1dffda4ba0bdfda994d3add, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

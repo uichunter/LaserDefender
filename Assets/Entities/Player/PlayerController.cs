@@ -9,21 +9,30 @@ public class PlayerController : MonoBehaviour {
 	public string keyDown;
 	public string keyLeft;
 	public string keyRight;
-	public GameObject firePrefab;
+    public GameObject firePrefab;
 //TODO Add a fire effect to projectile;
-//	public GameObject fireEffect;
+//public GameObject fireEffect;
 	public float beamSpeed = 5f;
 	public float fireRate = 0.2f;
 	public AudioClip playerFireSound;
 
 	private int playerHp;
+	private LvManager lvManager;
+ 
     Vector3 spriteBorder;
 
 	// Use this for initialization
 	void Start () {
 	//TODO if (hasStarted){Screen.showCursor = false;}
+		setLvManager();
 		setPlayerHp();
 		SetMoveSpeed();
+	}
+
+	//This is important! I just forgot to add this method. And the lvManager is always null!!
+	void setLvManager ()
+	{
+		lvManager = GameObject.FindObjectOfType<LvManager>();
 	}
 
 	void SetMoveSpeed ()
@@ -102,13 +111,15 @@ public class PlayerController : MonoBehaviour {
 	{
 		Projectile biu = collider.gameObject.GetComponent<Projectile> ();
 		Hit (biu);
-		biu.Hit ();
+		biu.Hit ();	
 	}
 
 	void Hit (Projectile biu)
 	{
 		playerHp -= biu.GetDamage();
 		if (playerHp <= 0) {
+			Debug.Log("Object Destroied");
+		    lvManager.LvLoader("Lose");
 			Destroy(gameObject);
 		}
 	}

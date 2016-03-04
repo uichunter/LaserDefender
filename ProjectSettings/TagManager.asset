@@ -14,7 +14,7 @@ TagManager:
   - 
   - 
   - Friendlies
-  - Enemy
+  - Enemies
   - FriendlyProjectile
   - EnemyProjectile
   - PlaySpace
@@ -40,4 +40,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Enemies
+    uniqueID: 2879240575
+    locked: 0
+  - name: EnemiesProjectile
+    uniqueID: 1574493013
+    locked: 0
+  - name: FriendlyProjectile
+    uniqueID: 633848891
+    locked: 0
+  - name: Friendlies
+    uniqueID: 286051947
     locked: 0
