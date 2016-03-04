@@ -12,7 +12,7 @@ GameObject:
   - 50: {fileID: 5075150}
   - 61: {fileID: 6133962}
   - 114: {fileID: 11483640}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: laserBlue03
   m_TagString: Untagged
   m_Icon: {fileID: 0}

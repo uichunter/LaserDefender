@@ -12,7 +12,7 @@ GameObject:
   - 50: {fileID: 5065440}
   - 114: {fileID: 11421496}
   - 60: {fileID: 6009572}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: playerShip1_red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
