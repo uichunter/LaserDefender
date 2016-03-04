@@ -2,30 +2,39 @@
 using System.Collections;
 
 public class MusicPlayer : MonoBehaviour {
-	void Awake (){
-		//Debug.Log("Music Player Awake, instance: "+GetInstanceID());
-		if (instance == null) {
-			GameObject.DontDestroyOnLoad (gameObject);
-			instance = this;
-		} else {
-			Destroy (gameObject);
-			time++;
-			Debug.Log(time+" gameObjects have been destroyed");
-		}
-	}
-
 	static MusicPlayer instance=null;
-	static int time=0;
+	public AudioClip startClip;
+	public AudioClip gameClip;
+	public AudioClip endClip;
+
+	private AudioSource music;
 
 	// Use this for initialization
 	void Start ()
 	{
-		Debug.Log("Music Player Start, instance: "+GetInstanceID());
-
+		if (instance == null) {
+			instance = this;
+			GameObject.DontDestroyOnLoad (gameObject);
+			music = GetComponent<AudioSource>();
+		} else {
+			Destroy (gameObject);
+		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void OnLevelWasLoaded (int level)
+	{
+		Debug.Log ("Music player is load for " + level);
+		music.Stop ();
+
+		if (level == 0) {
+			music.clip = startClip;
+		} else if (level == 1) {
+			music.clip = gameClip;
+		} else if (level ==2){
+			music.clip = endClip;
+		}
+
+		music.Play();
+
 	}
 }
