@@ -6,12 +6,20 @@ public class EnemyFightController : MonoBehaviour {
 	public float missleSpeed;
 	public GameObject missleType;
 	public float shotsPerSec = 0.5f;
+	public int EnemyScore;
 
 	private int enemyHp;
+	private ScoreKeeper scorekeeper;
 
 	void Start ()
 	{
+		setScoreKeeper();
 		enemyHp = enemyHpMax;
+	}
+
+	void setScoreKeeper ()
+	{
+		scorekeeper = GameObject.Find("Score").GetComponent<ScoreKeeper>();
 	}
 
 	//TODO Specify the type of collider is projectile or spaceship.
@@ -28,6 +36,7 @@ public class EnemyFightController : MonoBehaviour {
 	{
 		enemyHp -= biu.GetDamage();
 		if (enemyHp <= 0) {
+			scorekeeper.Score(EnemyScore);
 			Destroy(gameObject);
 		}
 	}

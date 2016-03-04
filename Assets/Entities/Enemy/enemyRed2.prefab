@@ -111,6 +111,7 @@ MonoBehaviour:
   missleSpeed: 5
   missleType: {fileID: 124054, guid: 1271997160d39c146aaab2966d0b5599, type: 2}
   shotsPerSec: 0.3
+  EnemyScore: 150
 --- !u!212 &21266254
 SpriteRenderer:
   m_ObjectHideFlags: 1
